@@ -1,0 +1,83 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-image: url("paper.gif");
+  background-color: #cccccc;
+ }
+/* Define primary and secondary colors */
+:root {
+  --primary-color: rgb(255, 36, 72);
+  --secondary-color: #f1b50e;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main Content */
+.content {
+  padding: 20px;
+}
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Item Status */
+.low { color: var(--secondary-color); }
+.good { color: #ea0731; }
+.out { color: #e81c93; }
+
+/* Form Styling */
+.form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"], input[type="number"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"], #admin-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover, #admin-btn:hover {
+  background-color: rgb(230, 39, 74);
+}
